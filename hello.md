@@ -1,1 +1,1 @@
-"I am learning how to use Git!"
+"I know how to use Git!"
