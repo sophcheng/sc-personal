@@ -1,22 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>SOPHC</title>
+</head>
+<div id="bg">
 <body>
+    <section class="header">
+        <a href="sophware.html"><button id="reddot" class="dot"></button></a>
+        <button id="yellowdot" class="dot"></button>
+        <button id="greendot" class="dot"></button>
+<h1>Hello, World!</h1>
+    </section>
+<h2 class="brown">I'm Sophie Cheng, a sophomore in CS @ Cornell Engineering!</h2>
+<p>I like languages -- of people, 'puters, && paint.</p>
+<i class="brown">Click to explore a bit of my work!</i>
 
-<h1>About Me</h1>
-<p>I'm from The Bronx, NY, but currently studying CS at Cornell University! I enjoy music, art, learning and being creative.</p>
+<section class="portals">
+    
+<div class="portal" id="projects">
+    <!-- <p>SOPHWARE</p> -->
+    <h2>Sophware</h2>
+    <a href="sophware.html"><img id="sophware" class ="portal" class="portalIcon" src="imgs/aiCat 1.png" onmouseover="this.src='imgs/ailuroPlanets.png';" onmouseout="this.src='imgs/aiCat 1.png';" alt="Icon for mobile app 'Ailuro'."></a>
 
-<p>“Being creative” is vague, but I like how it's not too clear. It lets you use a little creativity of your own to figure out what it means.</p>
+    
+</div>
+<div class="portal" class="portalIcon" id="art">
+    <!-- <p>ART</p> -->
+    <h2>Drawing</h2>
+    <a href="https://www.instagram.com/chengtothemax/"><img id="art" class= "portal" src ="imgs/rumi.png" onmouseover="this.src='imgs/jinu.png';" onmouseout="this.src='imgs/rumi.png';"alt="Fanart of Rumi from Kpop Demon Hunters."></a>
 
-<p>The craziest part about being creative is probably how hand-in-hand it goes with resourcefulness. (That's why part of these lines were excerpted from my last attempt at a personal website!)</p>
+</div>
+<div class="portal"  class="portalIcon"id="contact">
+    <!-- <p>ABOUT</p> -->
+         <h2>About</h2>
+    <a href="about.html"><img id="about" class= "portal" class="portalIcon" src ="favicon/android-chrome-512x512.png" onmouseover="this.src='imgs/iconAlt.png';" onmouseout="this.src='favicon/android-chrome-512x512.png';" alt="Cartoony rendition of Sophie."></a>
 
-<p>It feels like I'm solving a puzzle (while sometimes a little carsick trying to match the pace of your thoughts) and seeing the rough edges of each jigsaw piece butter over into a smooth, ripply-soft water finish.</p>
+</div>
+</section>
 
-<p>I'm exploring the avenues CS offers (cybersecurity, web/app design, etc.), and hope to continue my language-learning journey! (My phone is still set to Spanish from way back in 8th grade...I stay dedicated...)</p>
-
-<h2>I hap-pun to like wordplay</h2>
-<h2>I'm on a combat robotics team! (battlebots, but autonomous)</h2>
-<h2>I've been playing Pokémon GO in Spanish for 7 years</h2>
-<h2>I stayed overnight at a jail once (and at the rate my driving lessons are going, I may soon return!)</h2>
+<div class="bottom">
+<section class="header" id="funfactheader">
+<!-- <img  id="pfp" class= "dot" src ="favicon/android-chrome-512x512.png" alt="Cartoony rendition of Sophie."> -->
+        <button id="reddot" class="dot"></button>
+        <button id="yellowdot" class="dot"></button>
+        <a href="about.html"><button id="greendot" class="dot"></button></a>
+<h1>Fun Facts</h1>
+</section>
+    <div class="funfacts">
+<p>I hap-pun to like wordplay</p>
+<p class="brown">I'm on a combat robotics team! (battlebots, but autonomous)</p>
+<p>I've been playing Pokémon GO in Spanish for 7 years</p>
+<p class="brown">I stayed overnight at a jail once</p>
+<p class="brown">(& at the rate my driving lessons are going, I may soon return!)<p>
+</div>
+<div class="videoplayer">
+    
+<img id="viol"src="imgs/viol.png" alt="Abstract-ish digital art on my time with music.">
+<p>Yes, I did (do?) play violin.</p>
+<section class="header">
+        <button id="reddot" class="dot"></button>
+        <button id="yellowdot" class="dot"></button>
+        <a href="https://www.instagram.com/chengtothemax/"><button id="greendot" class="dot"></button></a>
+    <!-- <button id="backButton" class="dot"></button>
+    <button id="playButton" class="dot"></button>
+    <button id="forwardButton" class="dot"></button> -->
+</section>
+</div>
+</div>
 
 </body>
+</div>
 </html>
