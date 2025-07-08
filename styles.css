@@ -23,6 +23,38 @@ body{
   background-color: #964177;
 }
 
+/* nav{
+  width: 100%;
+  position: fixed;
+}
+
+.gat:hover {
+    color: navy;
+    border-color: #FFFFFF;
+    background-color: bisque;
+    transition: 0.2s;
+}
+.gat {
+    width: 40%;
+    font-size: 20px;
+    padding: 10px;
+    border-style: solid;
+    text-decoration: none;
+    border-radius: 20px;
+   
+    /* border-color: #e9598a; */
+    /* color: #FFFFFF;
+    border-color: lightblue;
+    background-color: #844979;
+}
+
+li{
+  text-align: end;
+  margin-top: 20px;
+  margin-right: 100px;
+  list-style: none;
+} */ 
+
 h1, h2{
   /* font-family: "Irish Grover", system-ui; */
   font-weight: 800;
@@ -80,7 +112,6 @@ img {
 }
 
 #reddot{
-  margin: 25px 25px 0px 25px;
   background-color: coral;
   border-color: pink;
 }
@@ -94,29 +125,50 @@ img {
   background-color: limegreen;
   border-color: greenyellow;
 }
+
+.actionBar{
+  display: flex;
+  flex-direction: row;
+  margin-left: 25px;
+}
+
 #pfp{
   display: flex;
   justify-self: end;
   align-self: flex-start;
 }
 
-.intro {
-  padding: 20px;
-  margin: 0 20px 0 20px;
+.rowView {
+  /* padding: 15px;
+  margin: 0 20px 0 20px; */
   display: flex;
-  display: row;
+  flex-direction: row;
   justify-content: center;;
 }
+
+#nutritiousView{
+  flex-direction: row-reverse;
+}
 .bio{
-  width: 50%;
+  width: 700px;
   align-self: center;
+  padding: 10px;
 }
 
-#fish{
+.processImg{
+  width: 70%;
+  border-style: ridge;
+  border-radius: 30px;
+  border-width: 5px;
+  margin: 20px;
+}
+
+.thumbnail{
   width: 350px;
   border-style: ridge;
   border-radius: 30px;
-  margin: 15px 15px 0 15px;
+  border-width: 5px;
+  margin: 20px;
 }
 /* Sophware Design */
 .icon{
@@ -128,28 +180,20 @@ img {
   font-size: 30px;
   padding-top: 1%;
   padding-bottom: 1%;
-  color: #844979;
+  color: black;
   display: block;
   text-align: center;
 }
-.pLink{
-  text-align: center;
-  margin-left: 25%;
-}
-#ainLink{
-  margin-left: 40%;
-}
+
 a{
   color:#ed5a8b;
 }
 
 video{
   width: 30%;
+  height: auto;
 }
 
-#nutty{
-  width: 80%;
-}
 
 /* Homepage Navigation */
 #pfp {
@@ -162,6 +206,8 @@ video{
 .portals{
   display: flex;
   justify-content: center;
+
+  margin-bottom: 50px;
 }
 
 #viol {
@@ -178,7 +224,7 @@ video{
   height: 200px;
   /* width: 200px; */
   padding: 10px;
-  margin: 20px;
+  margin: 15px;
   background-color: bisque;
   border-style: outset;
   border-radius: 50px;
@@ -200,33 +246,22 @@ video{
 
 #funfactheader{
   background-color: lightblue;
-  margin: 50px 50px 0 0;
-  width:50%;
 }
 
 .funfacts {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  margin: 50px;
+  width: 600px;
+  align-self: center;
 
-  justify-content: flex-start;
-  text-align: center;
-
-  border-radius: 30px;
+  border-radius: 40px;
   border-style: outset;
   border-color: #873d73;
-
-  padding: 20px;
+  margin: 20px;
 
 }
 
-.bottom{
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 60px 0 0 0;
+#bottom{
+  margin: 100px 0 0 0;
   max-width: 100%;
   height: auto;
-  overflow-inline:scroll;
 }
 

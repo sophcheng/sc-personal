@@ -11,107 +11,110 @@
 </head>
 <div id="bg">
 <body>  
-        <div>
+    <!-- <nav>
+        <ul>
+            <li><a href="index.html" class="gat">HOME</a></li>
+        </ul>
+    </nav> -->
      <div class="header" id="sophwareHeader">
+        <div class="actionBar">
         <a href="index.html"><button id="reddot" class="dot"></button></a>
         <button id="yellowdot" class="dot"></button>
         <button id="greendot" class="dot"></button>
-        <h1 style="color: white;">Sophware (Software)</h1>
+        </div>
+        <h1 style="color: white;">Sophware <em style="color: lightblue;">(Software)</em></h1>
     </div>
     <h2>Below are some apps I've designed and coded on, both collaboratively and solo!</h2>
-    <p>Click on the underlined project titles to see more.</p>
-    <p style="color: coral">[WORK IN PROGRESS -- GRAFTED FROM OLD SITE]</p>
+    <em><p class="brown">Click on the underlined project titles to see more.</p></em>
 <!-- AILURO -->
- <div class="blo" class="flex-item">
-        <img class="icon" src="imgs/aiCat 1.png" alt="App icon for Ailuro.">
-    </div>
-    <h3><a class="proj" href="https://www.esteelauder.com/blog-article-kode-with-klossy-learn-to-code-partnership">AILURO, 2025</a></h3>
-    <div class="container">
+
+    <div class="rowView" id="ailuroView">
     <!--<img class="thumbnail" id="two" src="imgs/nutConcept.png" alt="iOS app promoting Esteé Lauder's Nutritious.">-->
     <video class="thumbnail" id="one" alt="Demo video of Ailuro app."
            controls="controls">
-        <source src=
-"imgs/Ailuro_App_Demo.mp4" 
+        <source src= "imgs/Ailuro_App_Demo.mp4" 
                 type="video/mp4" />
     </video>
-        <div id="two">
-            <p class="pLeft">Educational app on AI’s impact on the planet, inspired by ailurophobia.</p>
-            <p class="pLeft">Alien cat-care planet minigame represents the effect of (generative) AI on our literal and cultural climate.</p>
-            <p class="pLeft">Selected as one of 10 winners for Deloitte x Kode With Klossy: AI & Sustainability Challenge nationwide.
+        <div class="bio">
+            <img class="icon" src="imgs/aiCat 1.png" alt="App icon for Ailuro.">
+            <h3><a class="proj" href="https://docs.google.com/presentation/d/1H90rT5-Ed8EYTbwOgbQ9Wtl3mipTOopfS7pXgoiW8zA/edit?slide=id.gd9b1f1976b_0_16#slide=id.gd9b1f1976b_0_16">AILURO, 2025</a></h3>
+            
+            <em><p class="brown">Educational app on AI’s impact on the planet, inspired by ailurophobia.</p></em>
+            <p>Alien cat-care planet minigame represents the effect of (generative) AI on our literal and cultural climate.</p>
+            <p>Selected as one of 10 winners for Deloitte x Kode With Klossy: AI & Sustainability Challenge nationwide.
 Awarded $5000 scholarship.</p>
-            <a class="pLink" href = "https://github.com/sophcheng/Ailuro">Click to see the Ailuro files!</a>
-            <p class="pLeft">Made with SwiftData/SwiftUI/Xcode, original art via Procreate.</p>
+            <a href = "https://github.com/sophcheng/Ailuro">Click to see the Ailuro files!</a>
+            <p>Made with SwiftData/SwiftUI/Xcode, original art via Procreate.</p>
             <!--<h2 class="motto">Motto: “See The Glow”</h2>-->
         </div>
-    </div>
-        </div> 
+    </div> 
 <!--AI-NSTEIN-->
-    <div class="group" class="flex-item">
-        <div class="blo" class="flex-item">
+    <div class="rowView">
+        <div>
             <img class="icon" src="imgs/ainstein.png" alt="AI-nstein, an AI chatbot dedicated to teaching beginner AI info.">
             <img class="icon" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHNlbzc1MXNieWtzemdoazVvaXdwYzgyM3BhZndqcTU1NHExN3hxOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/zjBv8ttSnSjZicvrsB/giphy.gif" alt="GIF of AI-nstein thinking!">
             <img class="icon" src="imgs/ainsData.png" alt="Sample image of test data used to train AI-nstein.">
         </div>
+        <div class="bio">
         <h3><a class="proj" href="https://huggingface.co/spaces/salient-american-kids/ai-nstein" target="_blank">AI-NSTEIN, 2024</a></h3>
         <p>Informational chatbot named "Al-bot AI-nstein", introducing beginners, skeptics, etc. to AI. Created with two peers at Kode With Klossy: 2024 AI & ML Camp.</p>
         <p>Data sourced from personal/class notes, public Kaggle datasets, & ChatGPT answers.</p>
         <p>Worked on dataset creation & collection, UI design, wireframing, model training, and final presentation of product.</p>
-        <a id = "ainLink" class="pLink" href = "https://huggingface.co/spaces/salient-american-kids/ai-nstein/tree/main">Click to see the AI-nstein files!</a>
+        <a href = "https://huggingface.co/spaces/salient-american-kids/ai-nstein/tree/main">Click to see the AI-nstein files!</a>
         <p>Made with Python, HuggingFace, original art via Sketchbook (Autodesk)/Procreate.</p>
+        </div>
         <!--<h2 class="motto">Motto: “Anyone can be an AI-nstein!”</h2>-->
     </div>
-<!--NUTRITIOUS-->   
-    <div class="blo" class="flex-item">
-        <img class="icon" src="imgs/nutDes.png" alt="Design process for app icon of Nutritious.">
-    </div>
-    <h3><a class="proj" href="https://www.esteelauder.com/blog-article-kode-with-klossy-learn-to-code-partnership">NUTRITIOUS, 2023</a></h3>
-    <div class="container">
-    <!--<img class="thumbnail" id="two" src="imgs/nutConcept.png" alt="iOS app promoting Esteé Lauder's Nutritious.">-->
+<!--NUTRITIOUS-->
+<div class="rowView" id="nutritiousView">  
     <video class="thumbnail" id="one" alt="Demo video of Nutritious app."
            controls="controls">
         <source src=
 "imgs/nutDemo.mp4" 
                 type="video/mp4" />
     </video>
-        <div id="two">
-            <p class="pLeft">Promotional app showcasing Estée Lauder's Nutritious line.</p>
-            <p class="pLeft">Presented app & creative process to Karlie Kloss & Esteé Lauder representatives in international competition.</p>
-            <a class="pLink" href = "https://github.com/sophcheng/SC_Nutritious_App_2023">Click to see the Nutritious files!</a>
-            <p class="pLeft">Made with SwiftUI/Xcode, original art via Procreate.</p>
+        <div class ="bio">
+            <img class="icon" src="imgs/nutDes.png" alt="Design process for app icon of Nutritious.">
+            <h3><a class="proj" href="https://www.esteelauder.com/blog-article-kode-with-klossy-learn-to-code-partnership">NUTRITIOUS, 2023</a></h3>
+
+            <em><p class="brown">Promotional app showcasing Estée Lauder's Nutritious line.</p></em>
+            <p>Presented app & creative process to Karlie Kloss & Esteé Lauder representatives in international competition.</p>
+            <a href = "https://github.com/sophcheng/SC_Nutritious_App_2023">Click to see the Nutritious files!</a>
+            <p>Made with SwiftUI/Xcode, original art via Procreate.</p>
             <!--<h2 class="motto">Motto: “See The Glow”</h2>-->
         </div>
-    </div>
-    <img class="thumbnail" id="nutty" src="imgs/nutConcept.png" alt="Initial concept designs/wireframes of Nutritious.">
-        </div>  
+        
+
+    <img class="processImg" src="imgs/nutConcept.png" alt="Initial concept designs/wireframes of Nutritious.">
+    </div> 
+        
 
 <!--BEEWARE-->
-<!-- <div class="blo" class="flex-item">
-        <img class="icon" src="imgs/beeDes.png" alt="App icon for Beeware.">
-    </div>
-    <h3 class="proj">BEEWARE, 2023</h3>
-    <div class="container">
-    <video class="thumbnail" id="one" alt="Demo video of Beeware app."
+
+    <div class="rowView" id="beewareView">
+    <video class="thumbnail" alt="Demo video of Beeware app."
            controls="controls">
         <source src=
 "imgs/beeDemo.mov" 
                 type="video/mp4" />
     </video>
-        <div id="two">
-            <span class="pLeft">
-            <p class="pLeft">Bee-themed nature guide for NYC wildlife. </p>
-            <p class="pLeft">Designed to raise environmental awareness & spark childish wonder.</p>
-            <p class="pLeft">Created with three peers at Kode With Klossy: 2023 Mobile App Development Camp.</p>
-            <p class="pLeft">Worked on wireframing, coding, UI creation, and final presentation of product.</p>
-            <p class="pLeft">Main focus: Design & layout of Games, Homepage + API of Maps.</p>
-            <a class="pLink" href = "https://github.com/sophcheng/Beeware">Click to see the Beeware files!</a>
-            <p class="pLeft">Made with SwiftUI/Xcode, original art via Sketchbook (Autodesk)/Procreate.</p>
-            </span>
-            <img class="thumbnail" id="bee" src="imgs/beePlan.png" alt="Initial concept designs/wireframes of Beeware.">
+        <div class="bio">
+            <img class="icon" src="imgs/beeDes.png" alt="App icon for Beeware.">
+            <h3 class="proj">BEEWARE, 2023</h3>
+
+            <p class="brown">Bee-themed nature guide for NYC wildlife. </p>
+            <p >Designed to raise environmental awareness & spark childish wonder.</p>
+            <p >Created with three peers at Kode With Klossy: 2023 Mobile App Development Camp.</p>
+            <p >Worked on wireframing, coding, UI creation, and final presentation of product.</p>
+            <p >Main focus: Design & layout of Games, Homepage + API of Maps.</p>
+            <a  href = "https://github.com/sophcheng/Beeware">Click to see the Beeware files!</a>
+            <p >Made with SwiftUI/Xcode, original art via Sketchbook (Autodesk)/Procreate.</p>
+            
         </div>
+        <img class="processImg" src="imgs/beePlan.png" alt="Initial concept designs/wireframes of Beeware.">
     </div>
     
-        </div>  -->
 </body>  
-</div>      
+</div>        
 
 </html>
