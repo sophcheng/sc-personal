@@ -65,12 +65,25 @@ h1, h2{
 
 }
 
-.noUpper{
-  text-transform: none;
-}
 
 h2 {
   font-size: 50;
+}
+
+.skeleton{
+  animation: skeleton-loading 1s linear infinite alternate-reverse;
+}
+
+@keyframes skeleton-loading {
+  0%{
+    background-color: hsl(200, 70%, 65%);
+  }
+  /* 50%{
+    background-color: hsl(200, 70%, 70%);
+  } */
+  100%{
+    background-color: hsl(200, 70%, 90%);
+  }
 }
 
 .brown{
@@ -80,11 +93,6 @@ h2 {
 p{
   padding: 15px;
   text-align: center;
-}
-
-img {
-  max-width: 100%; /* Image will shrink to fit its container, but won't exceed its original width */
-  height: auto; /* Height adjusts proportionally to maintain aspect ratio */
 }
 
 /* Page Sections */
@@ -99,34 +107,62 @@ img {
   border-color: #873d73;
 
 }
-.dot{
+
+.reddot{ /*TODO: make dot code more efficient*/
+  background-color: coral;
+  border-color: pink;
+
   border-style: onset;
   border-radius: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  border-radius: 25px;
   height: 25px;
   width: 25px;
   margin: 25px 25px 0px 0px;
 }
 
-#reddot{
-  background-color: coral;
-  border-color: pink;
-}
-
-#yellowdot{
+.yellowdot{
   background-color: palegoldenrod;
   border-color: bisque;
+
+  border-style: onset;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 25px;
+  width: 25px;
+  margin: 25px 25px 0px 0px;
 }
 
-#greendot{
+.greendot{
   background-color: limegreen;
   border-color: greenyellow;
+
+  border-style: onset;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 25px;
+  width: 25px;
+  margin: 25px 25px 0px 0px;
+}
+a.reddot, a.greendot{
+  border-style: outset;
 }
 
-.actionBar{
+a.reddot:hover, a.greendot:hover{
+  border-style: inset;
+  box-shadow: 5px -5px white;
+  /* background-color: #964177; */
+  /* border-color: black; */
+  transition: 0.3s;
+}
+
+
+.action-bar{
   display: flex;
   flex-direction: row;
   margin-left: 25px;
@@ -138,7 +174,7 @@ img {
   align-self: flex-start;
 }
 
-.rowView {
+.row-view {
   /* padding: 15px;
   margin: 0 20px 0 20px; */
   display: flex;
@@ -146,7 +182,7 @@ img {
   justify-content: center;;
 }
 
-#nutritiousView{
+#nutritious-view{
   flex-direction: row-reverse;
 }
 .bio{
@@ -155,7 +191,8 @@ img {
   padding: 10px;
 }
 
-.processImg{
+.process-img{
+
   width: 70%;
   border-style: ridge;
   border-radius: 30px;
@@ -203,19 +240,18 @@ video{
   border-radius: 5px;
 }
 
-.portals{
-  display: flex;
-  justify-content: center;
-
-  margin-bottom: 50px;
-}
-
 #viol {
-  width: 500px;
+  width: 400px;
   margin: 0 0 10px 0;
   align-self: flex-start;
   border-style: ridge;
   border-radius: 30px;
+}
+
+.portals{
+  display: flex;
+  justify-content: center;
+  padding: 15px;
 }
 
 .portal{
@@ -223,32 +259,32 @@ video{
   align-items: flex-end;
   height: 200px;
   /* width: 200px; */
-  padding: 10px;
-  margin: 15px;
+  padding: 15px;
+  margin: 15px 15px 0px 15px;
   background-color: bisque;
   border-style: outset;
   border-radius: 50px;
   border-color: #873d73;
 }
 
-.portalIcon{
-  margin: -20px 0 0 0 ;
-
+.portal-icon{
+  margin: -10px 0 0 0 ;
 }
 
-#aboutHeader{
+/* div.portal:hover{
+  background-color: #964177;
+  transition: 0.2s;
+} */
+
+#about-header{
   background-color: navy;
 }
 
-#sophwareHeader{
+#sophware-header{
   background-color:black;
 }
 
-#funfactheader{
-  background-color: lightblue;
-}
-
-.funfacts {
+.fun-facts {
   width: 600px;
   align-self: center;
 
@@ -256,10 +292,9 @@ video{
   border-style: outset;
   border-color: #873d73;
   margin: 20px;
-
 }
 
-#bottom{
+#bottom {
   margin: 100px 0 0 0;
   max-width: 100%;
   height: auto;
