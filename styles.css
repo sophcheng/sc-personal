@@ -294,6 +294,34 @@ video{
   margin: 20px;
 }
 
+.experience-line{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-line img{
+  width: 80px;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.experience-line p:first-of-type{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 15px 15px 0 15px;
+  color: black;
+}
+
+.experience-line p {
+  width: 400px;
+}
+
+.experience-line a{
+  color: cadetblue;
+}
+
 #bottom {
   margin: 100px 0 0 0;
   max-width: 100%;
