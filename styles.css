@@ -276,14 +276,6 @@ video{
   transition: 0.2s;
 } */
 
-#about-header{
-  background-color: navy;
-}
-
-#sophware-header{
-  background-color:black;
-}
-
 .fun-facts {
   width: 600px;
   align-self: center;
