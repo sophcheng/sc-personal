@@ -182,9 +182,6 @@ a.reddot:hover, a.greendot:hover{
   justify-content: center;;
 }
 
-#nutritious-view{
-  flex-direction: row-reverse;
-}
 .bio{
   width: 700px;
   align-self: center;
