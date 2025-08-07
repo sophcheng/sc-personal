@@ -86,6 +86,11 @@ p{
   margin-right: 20px;
 }
 
+.header:hover .home-row-view {
+  flex-direction: row-reverse;
+  transition: 1s ease-in;
+}
+
 .header:hover .home{
   background-color: lightblue;
   background-image: radial-gradient(circle at center, goldenrod 1rem, transparent 0);
@@ -103,12 +108,14 @@ p{
   padding: 10px;
   opacity: 0;
   visibility: hidden;
+  display: none;
 }
 
 .header:hover .hidden-text{
   opacity: 1;
   visibility: visible;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  display:flex;
 }
 
 @media screen and (max-width: 680px){
@@ -134,7 +141,7 @@ p{
   background-clip: padding-box;
   border-radius: 40px 40px 0 0;
   border-color: #873d73;
-  width:100%;
+  width: 100%;
 
 }
 
@@ -208,6 +215,8 @@ a.reddot:hover, a.greendot:hover{
 }
 
 .bio{
+  display: flex;
+  justify-content: center;
   width: 700px;
   align-self: center;
   padding: 10px;
